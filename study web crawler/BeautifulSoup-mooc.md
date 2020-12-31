@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 soup = BeautifulSoup(<p> data </p>, 'html.parser')
 ```
 >解析器
+
 |解析器|使用方法|安装条件|
 |---|---|---|
 |bs4的HTML解析器|BeautifulSoup(markup,'html.parser')|安装bs4|
@@ -19,6 +20,9 @@ soup = BeautifulSoup(<p> data </p>, 'html.parser')
 |html5lib解析器|BeautifulSoup(markup, "html5lib")|pip install l5lib|
 
 >基本元素
+
+|元素|使用方式|
+|---|---|
 |Tag|<>……</>|
 |Name|<tag>.name|
 |Attributes|<tag>.attrs（字典）|
