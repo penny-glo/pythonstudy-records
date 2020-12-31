@@ -88,14 +88,14 @@ HEAD方法
 requests.request(url,**kwargs)
 ```
 
-POST爬虫
+POST方法
 ---
 在URL位置的资源后增加新的信息
 ```python
 requests.request(url,data=None,json=None,**kwargs)
 ```
 
-PUT爬虫
+PUT方法
 ---
 在URL位置储存资源，覆盖原有的资源
 ```python
