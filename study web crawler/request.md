@@ -14,6 +14,7 @@ get方法
 ---
 ```python
 r=requests.get('url',params=none,**kwargs)
+```
 
   reponse对象：爬虫返回的全部内容
   
@@ -28,3 +29,4 @@ r=requests.get('url',params=none,**kwargs)
   r.apparent_encoding         '从内容中分析出相应内容编码方式
   
   r.content        'HTTP相应内容的二进制形式
+  ```
