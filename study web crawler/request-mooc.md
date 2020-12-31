@@ -21,15 +21,15 @@ r=requests.get('url',params=none,**kwargs)
   
   ```python
   
-  r.status_code        'HTTP请求的返回状态，200表示成功，404表示失败
+  r.status_code        '''HTTP请求的返回状态，200表示成功，404表示失败
   
-  r.text         'url内容
+  r.text         '''url内容
   
-  r.encoding         '网页内容编码方式（从HTTPheader中分析）
+  r.encoding         '''网页内容编码方式（从HTTPheader中分析）
   
-  r.apparent_encoding         '从内容中分析出相应内容编码方式
+  r.apparent_encoding         '''从内容中分析出相应内容编码方式
   
-  r.content        'HTTP相应内容的二进制形式
+  r.content        '''HTTP相应内容的二进制形式
   ```
   
   ```
