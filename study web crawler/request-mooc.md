@@ -60,16 +60,16 @@ import requests
 
 def getHTML.Text(url):
   try:
-    r=requests.get(url,timeout=30)
-    r.raise_for_status()        '异常处理语句，输出HTTPError
-    r.encoding=r.apparent_encoding
-    return r.text
+      r=requests.get(url,timeout=30)
+      r.raise_for_status()        '异常处理语句，输出HTTPError
+      r.encoding=r.apparent_encoding
+      return r.text
   except:
-    return "产生异常"
+      return "产生异常"
     
 if __name__=="__main__":
-  url="http://www.baidu.com"
-  print(getHTMLText(url))
+    url="http://www.baidu.com"
+    print(getHTMLText(url))
 ```
 HTTP协议
 URL格式：http://host[:post][path]
@@ -123,15 +123,16 @@ requests.request(url,**kwargs)
 import requests
 url="http://item.jd.com/2967929.html"
 try:
-  r=requests.get(url)
-  r.raise_for_status()
-  r.encoding=r.apparent_encoding
-  print(r.text[:1000])
+    r=requests.get(url)
+    r.raise_for_status()
+    r.encoding=r.apparent_encoding
+    print(r.text[:1000])
 except:
-  print("爬取失败")
+    print("爬取失败")
 ```
 
 >案例2：亚马逊商品页面爬取
+
 r.request.headers 寻找错误原因
 ```python
 import requests
@@ -146,7 +147,8 @@ except:
     print("爬取失败")
 ```
 
->案例3：百度/360搜索关键词提交
+>案例3：百度搜索关键词提交
+
 百度关键词接口：http://www.baidu.com/s?wd=keyword
 ```python
 import requests
@@ -154,9 +156,46 @@ keyword='python'
 try:
     kv={'wd':keyword}
     r=requests.get('http://www.baidu.com/s',params=kv)
-    print(r.requests.url)
+    print(r.request.url)
     r.raise_for_status()
-    print(len(r.txt)
+    print(len(r.text))
+except:
+    print("爬取失败")
+```
+
+>案例4：网络图片的爬取和储存（有未知错误）
+
+网络图片链接格式：http://www.example.com/picture.jpg
+```python
+import requests
+import os
+url='http://https://www.nationalgeographic.com/travel/top-10/new-years-eve-celebrations/#/85691.jpg'
+root='E://照片//'
+path=root+url.split('/')[-1]
+try:
+    if not os.path.exists(root):
+        os.mkdir(root)
+    if not os.path.exists(path):
+        r=requests.get(url)
+        with open (path,'wb') as f:
+            f.write(r.content)
+            f.close()
+            print('文件保存成功')
+    else:
+        print('文件已存在')
+except:
+    print("爬取失败")
+```
+
+>案例5：IP地址归属自动查询（页面有变动）
+```python
+import requests
+url='https://user.ip138.com/ip/'
+try:
+    r=requests.get(url+'202.204.80.112')
+    r.raise_for_status()
+    r.encoding=r.apparent_encoding
+    print(r.text[-500:])
 except:
     print("爬取失败")
 ```
