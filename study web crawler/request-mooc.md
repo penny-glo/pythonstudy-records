@@ -41,17 +41,17 @@ r=requests.get('url',params=none,**kwargs)
   
 >Requests库的异常
 ```python
-requests.ConnectionError        '网络连接错误异常
+requests.ConnectionError        '''网络连接错误异常
 
-requests.HTTPError        'HTTP错误异常
+requests.HTTPError        '''HTTP错误异常
 
-requests.URLRequired        'URL缺失异常
+requests.URLRequired        '''URL缺失异常
 
-requests.TooManyRedirects        '超过最大重定向次数
+requests.TooManyRedirects        '''超过最大重定向次数
 
-requests.ConnectTimeout       '链接远程服务器超时异常
+requests.ConnectTimeout       '''链接远程服务器超时异常
 
-requests.Timeout        '请求URL超时
+requests.Timeout        '''请求URL超时
 ```
 
 >爬取网页的通用代码框架
@@ -61,7 +61,7 @@ import requests
 def getHTML.Text(url):
   try:
       r=requests.get(url,timeout=30)
-      r.raise_for_status()        '异常处理语句，输出HTTPError
+      r.raise_for_status()        '''异常处理语句，输出HTTPError
       r.encoding=r.apparent_encoding
       return r.text
   except:
