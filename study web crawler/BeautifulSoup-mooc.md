@@ -24,8 +24,71 @@ soup = BeautifulSoup(<p> data </p>, 'html.parser')
 |元素|使用方式|
 |---|---|
 |Tag|<>……</>|
-|Name|<tag>.name|
-|Attributes|<tag>.attrs（字典）|
-|NavigableString|<tag>.string|
+|Name|<t>.name|
+|Attributes|<t>.attrs（字典）|
+|NavigableString|<t>.string|
 |Comment|注释|
 
+#tag
+```python
+tag=soup.<tag>
+```
+
+#name
+```python
+soup.a.name
+```
+
+#attributes
+```python
+tag=soup.a
+tag.attrs
+tag.attrs['class']
+typr(tag.attrs)
+```
+
+#string
+```python
+soup.a.string
+```
+
+#comment
+```python
+>>>type(soup.p.string)
+<class 'bs4.element.NavigableString'>
+```
+
+>标签树的遍历
+>>下行遍历
+.contents 将tag的子节点以列表的方式输出
+
+.children 遍历所有子节点
+
+.decendants 循环遍历所有子孙节点
+
+>>上行遍历
+.parent 节点父标签
+
+.parents 遍历先辈节点
+
+>>平行遍历
+.next_sibling
+
+.previous_sibling
+
+.next_siblings
+
+.previous_siblings
+
+>美化页面
+soup.prettify() 增加换行符
+
+>信息提取
+```python
+soup.find_all(name,attrs,recursive,string,**kwargs)
+```
+
+实战案例：中国大学排名
+---
+http://www.zuihaodaxue.cn/zuihaodaxuepaiming2016.html
+https://www.shanghairanking.cn/rankings/bcur/2020
