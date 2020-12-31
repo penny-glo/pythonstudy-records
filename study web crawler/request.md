@@ -31,3 +31,9 @@ r=requests.get('url',params=none,**kwargs)
   
   r.content        'HTTP相应内容的二进制形式
   ```
+  
+  ```
+  r.apparent_encoding
+  r.encoding='  '
+  r.text
+ ```
