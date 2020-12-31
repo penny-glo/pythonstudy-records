@@ -9,6 +9,7 @@
 pip install requests
 
 requests.requests()
+```
 
 get方法
 ---
@@ -16,7 +17,7 @@ get方法
 r=requests.get('url',params=none,**kwargs)
 ```
 
-  reponse对象：爬虫返回的全部内容
+>reponse对象：爬虫返回的全部内容
   
   ```python
   
