@@ -11,7 +11,7 @@ pip install requests
 requests.requests()
 ```
 
-get方法
+**GET方法**
 ---
 ```python
 r=requests.get('url',params=none,**kwargs)
@@ -36,4 +36,71 @@ r=requests.get('url',params=none,**kwargs)
   r.apparent_encoding
   r.encoding='  '
   r.text
- ```
+  
+  ```
+  
+>Requests库的异常
+```python
+requests.ConnectionError        '网络连接错误异常
+
+requests.HTTPError        'HTTP错误异常
+
+requests.URLRequired        'URL缺失异常
+
+requests.TooManyRedirects        '超过最大重定向次数
+
+requests.ConnectTimeout       '链接远程服务器超时异常
+
+requests.Timeout        '请求URL超时
+```
+
+>爬取网页的通用代码框架
+```python
+import requests
+
+def getHTML.Text(url):
+  try:
+    r=requests.get(url,timeout=30)
+    r.raise_for_status()        '异常处理语句，输出HTTPError
+    r.encoding=r.apparent_encoding
+    return r.text
+  except:
+    return "产生异常"
+    
+if __name__=="__main__":
+  url="http://www.baidu.com"
+  print(getHTMLText(url))
+```
+HTTP协议
+URL格式：http://host[:post][path]
+
+REQUEST方法
+```python
+requests.request(method,url,**kwargs)
+```
+>kwargs:控制访问的参数（12个）
+
+HEAD方法：获取头部信息
+```python
+requests.request(url,**kwargs)
+```
+
+POST     在URL位置的资源后增加新的信息
+```python
+requests.request(url,data=None,json=None,**kwargs)
+```
+
+PUT      在URL位置储存资源，覆盖原有的资源
+```python
+requests.request(url,data=None,**kwargs)
+```
+
+PATCH    局部更新URL位置的资源
+```python
+requests.request(url,data=None,**kwargs)
+```
+
+DELETE   删除URL位置的资源
+```python
+requests.request(url,**kwargs)
+```
