@@ -115,3 +115,48 @@ DELETE爬虫
 ```python
 requests.request(url,**kwargs)
 ```
+
+实战案例
+---
+>案例1：京东商品页面爬取
+```python
+import requests
+url="http://item.jd.com/2967929.html"
+try:
+  r=requests.get(url)
+  r.raise_for_status()
+  r.encoding=r.apparent_encoding
+  print(r.text[:1000])
+except:
+  print("爬取失败")
+```
+
+>案例2：亚马逊商品页面爬取
+r.request.headers 寻找错误原因
+```python
+import requests
+url="http://www.amazon.cn/gp/product/B01M8L5Z3Y"
+try:
+    kv={'user-agent':'Mozilla/5.0'}
+    r=requests.get(url,headers=kv)
+    r.raise_for_status()
+    r.encoding=r.apparent_encoding
+    print(r.text[:1000])
+except:
+    print("爬取失败")
+```
+
+>案例3：百度/360搜索关键词提交
+百度关键词接口：http://www.baidu.com/s?wd=keyword
+```python
+import requests
+keyword='python'
+try:
+    kv={'wd':keyword}
+    r=requests.get('http://www.baidu.com/s',params=kv)
+    print(r.requests.url)
+    r.raise_for_status()
+    print(len(r.txt)
+except:
+    print("爬取失败")
+```
