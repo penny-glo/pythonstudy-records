@@ -5,6 +5,8 @@
 
 [Requests Documentation](https://requests.readthedocs.io/_/downloads/en/master/pdf/)
 
+[Requests中文文档](https://2.python-requests.org/zh_CN/latest/user/quickstart.html)
+
 ```python
 pip install requests
 
