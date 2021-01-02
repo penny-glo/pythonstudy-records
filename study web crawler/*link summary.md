@@ -45,3 +45,19 @@
 [正则表达式HOWTO 中文文档](https://docs.python.org/zh-cn/3/howto/regex.html#regex-howto)
 
 [Re github学习笔记](https://github.com/penny-glo/pythonstudy-records/blob/main/study%20web%20crawler/re-mooc.md)
+
+##  其它库
+
+### email库
+
+[email-python](https://docs.python.org/3/library/email.html)
+
+[email-example-python](https://docs.python.org/3/library/email.examples.html)
+
+### smtplib库
+
+[smtplib-python](https://docs.python.org/3/library/smtplib.html)
+
+### time库
+
+[time-python](https://docs.python.org/zh-cn/3/library/time.html)
