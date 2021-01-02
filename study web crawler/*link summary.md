@@ -1,11 +1,23 @@
 爬虫学习页面汇总
 ===
+总体教程
+---
+[Python3 网络爬虫开发实战教程（崔庆才）](https://cuiqingcai.com/5052.html)
+
 
 urlib库
 ---
-[Python 爬虫入门四之 Urllib 库的高级用法](https://cuiqingcai.com/954.html)
-
 [urlib-Python](https://docs.python.org/3/library/urllib.html)
+
+>request
+[发送请求](https://cuiqingcai.com/5500.html)
+
+>error
+[处理异常](https://cuiqingcai.com/5505.html)
+
+>parse
+[解析链接](https://cuiqingcai.com/5508.html)
+
 
 requests库
 ---
@@ -15,6 +27,7 @@ requests库
 
 [Requests github学习笔记](https://github.com/penny-glo/pythonstudy-records/blob/main/study%20web%20crawler/request-mooc.md)
 
+
 Beautiful Soup库
 ---
 [Beautiful Soup中文文档](https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/)
@@ -22,6 +35,7 @@ Beautiful Soup库
 [Beautiful Soup Documentation](https://readthedocs.org/projects/beautiful-soup-4/downloads/pdf/latest/)
 
 [Beautiful Soup github学习笔记](https://github.com/penny-glo/pythonstudy-records/blob/main/study%20web%20crawler/BeautifulSoup-mooc.md)
+
 
 re库（正则表达式）
 ---
