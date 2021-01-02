@@ -2,8 +2,9 @@
 ===
 总体教程
 ---
-[Python3 网络爬虫开发实战教程（崔庆才）](https://cuiqingcai.com/5052.html)
+[Python3 网络爬虫开发实战教程-崔庆才](https://cuiqingcai.com/5052.html)
 
+[Python网络爬虫与信息提取-中国大学mooc](https://www.icourse163.org/learn/BIT-1001870001?tid=1461946455#/learn/content)
 
 urlib库
 ---
