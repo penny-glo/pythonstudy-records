@@ -4,21 +4,19 @@
 
 2020.12.5 归档整理
 
-anythingelse:
+## anythingelse:
 [README.md教程](https://www.cnblogs.com/sishuiliuyun/p/4401915.html)
 
 [GitHub基本撰写和格式语法](https://docs.github.com/cn/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax)
 
 
-===
-
-##总体框架
+## 总体框架
 
 [free-programming-books](https://github.com/EbookFoundation/free-programming-books)
 
 [Build your own X](https://github.com/danistefanovic/build-your-own-x)
 
-###知识点汇总：
+### 知识点汇总：
 
 [Python 3.9.1rc1 文档](https://docs.python.org/zh-cn/3/index.html)
 
@@ -39,16 +37,16 @@ anythingelse:
 [Python教程-廖雪峰](https://www.liaoxuefeng.com/wiki/1016959663602400)
 
 
-###实战汇总：
+### 实战汇总：
 [HelloGitHub](cninfo.com.cn/new/index)
 
 [PythonExercises](https://github.com/greyli/PythonExercises)
 
 [Python-100-Days](https://github.com/jackfrued/Python-100-Days)
 
-##语法基础
+## 语法基础
 
-###知识点：
+### 知识点：
 
 计算机二级
 
@@ -56,9 +54,9 @@ crossin的编程教室-公众号
 
 python编程：从入门到实践
 
-##爬虫
+## 爬虫
 
-###知识点：
+### 知识点：
 
 [中国大学mooc](https://www.icourse163.org/learn/BIT-1001870001?tid=1461946455#/learn/content)
 
@@ -76,7 +74,7 @@ scrapy
 
 [Scrapy Tutorial](https://docs.scrapy.org/en/latest/intro/tutorial.html)
 
-###实战：
+### 实战：
 
 [interesting-python](https://github.com/Alfred1984/interesting-python)
 
@@ -92,7 +90,7 @@ scrapy
 
 [python-spider](https://github.com/Jack-Cherish/python-spider)
 
-##数据分析
+## 数据分析
 
 中国大学mooc
 
