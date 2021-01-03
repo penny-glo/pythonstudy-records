@@ -2,8 +2,6 @@
 
 关于Python学习的归档&记录
 
-2020.12.5 归档整理
-
 ## anythingelse:
 [README.md教程](https://www.cnblogs.com/sishuiliuyun/p/4401915.html)
 
