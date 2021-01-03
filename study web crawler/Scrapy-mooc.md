@@ -46,9 +46,9 @@
 
 ## 常用命令
 
-'''python
+```python
 >scrapy<command>[option][args]
-'''
+```
 
 >command
 
