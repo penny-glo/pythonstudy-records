@@ -22,7 +22,7 @@
 [解析链接](https://cuiqingcai.com/5508.html)
 
 
-### requests库
+### Requests库
 
 [Requests中文文档](https://2.python-requests.org/zh_CN/latest/user/quickstart.html)
 
@@ -40,7 +40,7 @@
 [Beautiful Soup github学习笔记](https://github.com/penny-glo/pythonstudy-records/blob/main/study%20web%20crawler/BeautifulSoup-mooc.md)
 
 
-### re库（正则表达式）
+### Re库（正则表达式）
 
 [正则表达式HOWTO 中文文档](https://docs.python.org/zh-cn/3/howto/regex.html#regex-howto)
 
