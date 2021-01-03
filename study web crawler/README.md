@@ -46,6 +46,14 @@
 
 [Re github学习笔记](https://github.com/penny-glo/pythonstudy-records/blob/main/study%20web%20crawler/re-mooc.md)
 
+### Scrapy库（爬虫框架）
+
+[scrapy中文文档](https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html)
+
+[Scrapy Documentation](https://docs.scrapy.org/_/downloads/en/latest/pdf/)
+
+[Scrapy github学习笔记](https://github.com/penny-glo/pythonstudy-records/blob/main/study%20web%20crawler/Scrapy-mooc.md)
+
 ##  其它库
 
 ### email库
