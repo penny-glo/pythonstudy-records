@@ -24,6 +24,8 @@
 
 ### Spider（可编辑）
 
+`settings.py`
+
 解析downloader返回的响应
 
 产生爬取项
@@ -32,11 +34,15 @@
 
 ### Item Pipelines（可编辑）
 
+`pipelines.py`
+
 以流水线处理Spider产生的爬取项
 
 清理，检验，查重，储存到数据库
 
 ### Downloader Middleware（可编辑）
+
+`middlewares.py`
 
 修改、丢弃、新增请求和响应
 
