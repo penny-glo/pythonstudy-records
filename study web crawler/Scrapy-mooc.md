@@ -26,6 +26,8 @@
 
 `settings.py`
 
+`spiders\`
+
 解析downloader返回的响应
 
 产生爬取项
@@ -66,3 +68,36 @@
 |crawl|scrapy crawl <spider>|运行一个爬虫|
 |list|scrapy list|列出所有爬虫|
 |shell|scrapy shell [url]|启动URL调试命令行|
+  
+## 基本使用
+
+### Anaconda prompt
+
+### 创建工程(Anaconda prompt)
+```
+scrapy startproject python123demo
+```
+
+### 产生spider(Anaconda prompt)
+```
+cd python123demo
+scrapy genspider demo python123.io
+```
+
+### 配置spider(idle)
+```python
+import scrapy
+class DemoSpider(scrapy.Spider):
+    name = "demo"
+    #allowed_domains = ["python123.io"]
+    start_urls = ['https://python123.io/ws/demo.html']
+    def parse(self, response):
+        fname = response.url.split('/')[-1]
+        with open(fname, 'wb') as f:
+            f.write(response.body)
+        self.log('Saved file %s.' % name)
+```
+### 运行spider(Anaconda prompt)
+```
+scrapy crawl demo
+```
