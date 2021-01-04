@@ -32,7 +32,7 @@ def check():
         history = tmp['history']
         now = parseWeb
 
-        if history[-3:0] == now[-3:0]:
+        if history[-3:] == now[-3:]:
             result = ''
             print('未发现更新！')
         else:
