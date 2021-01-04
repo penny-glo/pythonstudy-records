@@ -9,17 +9,17 @@
 
 ## 总体框架
 
- [ ] [free-programming-books](https://github.com/EbookFoundation/free-programming-books)
+-[ ] [free-programming-books](https://github.com/EbookFoundation/free-programming-books)
 
- [ ] [Build your own X](https://github.com/danistefanovic/build-your-own-x)
+-[ ] [Build your own X](https://github.com/danistefanovic/build-your-own-x)
 
 ### 知识点汇总：
 
- [x] 《Head First Python(Version 2)》  Paul Barry
+-[x] 《Head First Python(Version 2)》  Paul Barry
 
- [x] 《Python语言程序设计基础（第二版）》 嵩天，礼欣，黄天羽
+-[x] 《Python语言程序设计基础（第二版）》 嵩天，礼欣，黄天羽
 
- [ ] 《python编程：从入门到实践》
+-[ ] 《python编程：从入门到实践》
 
 [Python 3.9.1rc1 文档](https://docs.python.org/zh-cn/3/index.html)
 
@@ -51,9 +51,9 @@
 
 ### 知识点：
 
- [x] [中国大学mooc](https://www.icourse163.org/learn/BIT-1001870001?tid=1461946455#/learn/content)
+-[x] [中国大学mooc](https://www.icourse163.org/learn/BIT-1001870001?tid=1461946455#/learn/content)
 
- [x] 《Python3 网络爬虫开发实战》 崔庆才
+-[x] 《Python3 网络爬虫开发实战》 崔庆才
 
 urlib
 
@@ -83,24 +83,24 @@ scrapy
 
 ## 数据分析
 
- [ ] 中国大学mooc
+-[ ] 中国大学mooc
 
- [ ] 《利用python进行大数据分析》
+-[ ] 《利用python进行大数据分析》
 
 [python_for_data_analysis_2nd_chinese_version（英文版)](https://github.com/iamseancheney/python_for_data_analysis_2nd_chinese_version)
 
- [ ] 《python金融大数据分析》
+-[ ] 《python金融大数据分析》
 
- [ ] 《三天搞定python基础概念》
+-[ ] 《三天搞定python基础概念》
 
 [Python-first-Practice](https://github.com/MurphyWan/Python-first-Practice)
 
- [ ] python numpy tutorial 斯坦福在线课程 coursera
+-[ ] python numpy tutorial 斯坦福在线课程 coursera
 
 [Python Numpy Tutorial (with Jupyter and Colab)](https://cs231n.github.io/python-numpy-tutorial/)
 
- [ ] 数据储存 mysql pymysql
+-[ ] 数据储存 mysql pymysql
 
- [ ] 数据清洗 Pandas Numpy
+-[ ] 数据清洗 Pandas Numpy
 
- [ ] 数据可视化 Matplotlib
+-[ ] 数据可视化 Matplotlib
