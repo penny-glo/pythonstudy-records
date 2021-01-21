@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import re
 import time
 
+
 def getUrl(url):    #获取需爬取的网页地址
     html1=getHTML(url)
     soup1=BeautifulSoup(html1,'html.parser')
@@ -16,8 +17,11 @@ def getUrl(url):    #获取需爬取的网页地址
     
 
 def getHTML(page):  #爬取网页
+    headers={
+        'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36'
+    }
     try:
-        r=requests.get(page)
+        r=requests.get(page,headers=headers)
         r.raise_for_status()
         r.encoding='GBK'
         return r.text
@@ -48,20 +52,19 @@ def message(html):  #解析网页，获取所有小说内容
 
 
 def txt(parseWeb):  #保存为txt文件
-    with open("C:\\Users\\mac\\Desktop\\后宫·甄嬛传\\4.txt",'a',encoding='utf-8') as f:
+    with open("C:\\Users\\mac\\Desktop\\后宫·甄嬛传\\7.txt",'a',encoding='utf-8') as f:
         f.write(parseWeb + '\n')
 
 
 #主程序
-url='https://www.kanunu8.com/book/3816/'    #需修改
-lix = getUrl(url)
+url='https://www.kanunu8.com/book/3819/'    #需修改
 
-with open("C:\\Users\\mac\\Desktop\\后宫·甄嬛传\\4.txt",'a',encoding='utf-8') as f:
-    f.write('后宫·甄嬛传4'+'\n')
+with open("C:\\Users\\mac\\Desktop\\后宫·甄嬛传\\7.txt",'a',encoding='utf-8') as f:
+    f.write('后宫·甄嬛传7（大结局）'+'\n')
     
-    
+lix = getUrl(url)
 for num in lix:
-    page = 'https://www.kanunu8.com/book/3816/'+num #需修改
+    page = 'https://www.kanunu8.com/book/3819/'+num #需修改
     html=getHTML(page)
     parseWeb=message(html)
     saveFile=txt(parseWeb)
